@@ -1,0 +1,2 @@
+컴파일 방법
+g++ -o imgview imgview.cpp $(pkg-config --libs --cflags opencv)
