@@ -1,0 +1,1 @@
+g++ -o cam main.cpp $(pkg-config --libs --cflags opencv)
