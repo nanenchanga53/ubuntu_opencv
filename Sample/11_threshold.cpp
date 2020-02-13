@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-	Mat image = imread("images/1.jpg", 0);		// 명암도 영상 읽기
+        Mat image = imread("images/test.jpg", 0);		// 명암도 영상 읽기
 	CV_Assert(!image.empty());									// 영상파일 예외처리
 
 	Mat Result;

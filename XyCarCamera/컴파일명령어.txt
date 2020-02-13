@@ -1,1 +1,6 @@
-g++ -o cam main.cpp $(pkg-config --libs --cflags opencv)
+g++ -o cam main.cpp $(pkg-config --libs --cflags opencv) //실행
+
+ls /ev/video*  //카메라 장치 확인
+v4l2-ctl -d /dev/video0 --all  //카메라 정보 확인
+v4l2-ctl -d /dev/video0 -C brightness  //밝기값 확인
+v4l2-ctl -d /dev/video0 -c brightness=50   //밝기값 설정

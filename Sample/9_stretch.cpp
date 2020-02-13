@@ -43,7 +43,7 @@ int search_valueIdx(Mat hist, int bias = 0)
 
 int main()
 {
-	Mat image = imread("images/histo_test1.jpg", 0);
+        Mat image = imread("images/1.jpg", 0);
 	CV_Assert(!image.empty());
 
 	Mat hist, hist_dst, hist_img, hist_dst_img;

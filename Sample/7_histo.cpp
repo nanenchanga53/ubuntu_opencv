@@ -47,7 +47,7 @@ void draw_histo(Mat hist, Mat &hist_img, Size size = Size(256, 200))
 
 int main()
 {
-	Mat image = imread("images/histo.jpg", IMREAD_GRAYSCALE);
+        Mat image = imread("images/smash.png", IMREAD_GRAYSCALE);
 	CV_Assert(!image.empty());
 
 	Mat hist, hist_img;

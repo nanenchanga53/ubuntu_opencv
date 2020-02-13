@@ -49,7 +49,7 @@ void draw_hist_hue(Mat hist, Mat &hist_img, Size size = Size(256, 200))
 
 int main()
 {
-	Mat image = imread("images/pixel_test.jpg", CV_LOAD_IMAGE_COLOR);
+        Mat image = imread("images/test.jpg", CV_LOAD_IMAGE_COLOR);
 	CV_Assert(!image.empty());
 
 	Mat HSV_img, HSV_arr[3];

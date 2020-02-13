@@ -3,7 +3,7 @@
 #include <unistd.h>
 #include <opencv2/opencv.hpp>
 #include <iostream>
-
+//이미지 차이점
 int main()
 {	
 	cv::Mat img_color = cv::imread("images/green.jpg", CV_LOAD_IMAGE_COLOR);
