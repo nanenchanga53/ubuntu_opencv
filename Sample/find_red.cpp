@@ -36,13 +36,13 @@ int main()
          for(int i = 0; i<contours.size(); i++)
          {
              Scalar line( 0, 0, 255);
-             //drawContours(result, contours, i, line);
+             drawContours(result, contours, i, line);
              RotatedRect rrect = minAreaRect(contours[i]);
              Rect boundingrect = rrect.boundingRect();
 
-             if(boundingrect.width * 0.6
+             if(boundingrect.width * 1.0
                  <= boundingrect.height
-                 && (boundingrect.width * 0.8
+                 && (boundingrect.width * 1.0
                  >= boundingrect.height))             {
                 rectangle(result, boundingrect, line);
              }
@@ -51,14 +51,6 @@ int main()
          {
             imshow("result", result);
          }
-
-        imshow("th_r_200", red_find_res);
-
-        imshow("r", imgsplit[2]);
-        imshow("g", imgsplit[1]);
-        imshow("b", imgsplit[0]);
-
-        imshow("last", last_find_res);
 
         imshow("Imgproc",Imgproc);
         //imshow("red",Imgsplit[2]);
